@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s # Интервал, с которым Prometheus будет собирать метрики (15 секунд по умолчанию).
+
+scrape_configs:
+  - job_name: 'itjobs'
+    static_configs:
+      - targets: ['itjobs.famer.keenetic.pro']
+
